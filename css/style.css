@@ -1,6 +1,6 @@
 :root {
   --text: rgba(0, 0, 0, 0.9);
-  --text-white: #fbfbfb;
+  --text-white: #fff;
   --text-title: #212529;
   --button-color: #0d6efd;
   --font-family: "Roboto", sans-serif;
@@ -55,9 +55,16 @@ input {
   padding: 10px 20px;
   margin-right: 10px;
 }
-
+button.disabled {
+  cursor: not-allowed; /* Fare imlecini engelli simgesine çevir */
+  opacity: 0.6; /* Saydamlık */
+  pointer-events: none; /* Tıklamayı tamamen devre dışı bırak */
+}
 .card-section {
   padding: 100px 0;
+}
+.card-section .icon {
+  font-size: 100px;
 }
 .card-div {
   display: flex;
@@ -68,8 +75,9 @@ input {
   padding: 10px 22px;
   width: 400px;
 }
-.card-div h3 {
+.card-div .subtitle {
   font-size: 30px;
+  padding: 15px 0;
 }
 .card-div p {
   font-size: 22px;
@@ -84,24 +92,89 @@ input {
 }
 .galery-showcase img {
   width: 100%;
-  height: auto;
+  height: 500px;
 }
 .gallery-text h3 {
   font-size: 30px;
-  padding: 20px 50px;
+  padding: 20px 0px 20px 100px;
 }
 .gallery-text p {
-  font-size: 20px;
-  padding: 0 60px;
+  font-size: 23px;
+  padding: 0px 50px 10px 100px;
 }
 .testimonial {
-  display: flex;
-  gap: 40px;
+  background-color: var(--background);
+}
+.testimonial-container {
+  padding: 100px 0 100px 0;
+}
+.testimonial h2 {
   text-align: center;
+  font-size: 35px;
+  padding-bottom: 40px;
+}
+.testimonial-div {
+  display: flex;
+  gap: 30px;
 }
 .testimonial-card {
-  padding: 20px;
+  padding: 22px;
+  width: 380px;
+  text-align: center;
 }
 .testimonial img {
   border-radius: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+}
+.testimonial-card h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.testimonial-card p {
+  font-size: 20px;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/img/bg-masthead.jpg);
+  height: 400px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.signup-form h2 {
+  font-size: 30px;
+  color: var(--text-white);
+  padding-bottom: 20px;
+}
+.footer {
+  display: flex;
+  height: 150px;
+  padding: 50px 0;
+}
+.footer-ul {
+  display: flex;
+  gap: 30px;
+}
+.footer-ul a {
+  color: var(--button-color);
+  text-decoration: underline;
+}
+.footer p {
+  padding-top: 10px;
+  color: #6c757d;
+}
+.footer-icons {
+  margin-left: auto;
+}
+.icon {
+  padding: 10px;
+  font-size: 30px;
+  color: var(--button-color);
 }

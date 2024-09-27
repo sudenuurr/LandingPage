@@ -29,7 +29,7 @@
         <button class="button" type="button">Sign Up</button>
       </div>
     </header>
-  </body>
+  
   <!-- main -->
   <main>
     <!-- hero section -->
@@ -44,7 +44,7 @@
             placeholder="Email Address"
             required
           />
-          <button class="button" type="button">Submit</button>
+          <button class="button disabled" type="button">Submit</button>
         </form>
       </div>
     </section>
@@ -52,21 +52,21 @@
     <section class="card-section">
       <div class="card-div container">
         <div>
-          <i class="fa-solid fa-window-maximize"></i>
+          <i class="fa-solid fa-window-maximize icon"></i>
           <h3 class="subtitle">Fully Responsive</h3>
           <p class="text">
             This theme will look great on any device, no matter the size!
           </p>
         </div>
         <div>
-          <i class="fa-solid fa-layer-group"></i>
+          <i class="fa-solid fa-layer-group icon"></i>
           <h3 class="subtitle">Bootstrap 5 Ready</h3>
           <p class="text">
             Featuring the latest build of the new Bootstrap 5 framework!
           </p>
         </div>
         <div>
-          <i class="fa-solid fa-terminal"></i>
+          <i class="fa-solid fa-terminal icon"></i>
           <h3 class="subtitle">Easy to Use</h3>
           <p class="text">
             Ready to use with your own content, or customize the source files!
@@ -132,10 +132,10 @@
       </div>
     </section>
     <!-- testimonial section -->
-    <section>
-      <div class="container">
+    <section class="testimonial">
+      <div class="container testimonial-container">
         <h2>What people are saying...</h2>
-        <div class="testimonial">
+        <div class="testimonial-div">
           <div class="testimonial-card">
             <img
               src="./assets/img/testimonials-1.jpg"
@@ -171,5 +171,43 @@
         </div>
       </div>
     </section>
+    <!-- signup-form section -->
+    <section class="signup-form">
+      <div class="signup-form-div"></div>
+        <h2>Ready to get started? Sign up now!</h2>
+        <form class="form">
+          <input
+            type="text"
+            name="Email"
+            id="Email"
+            placeholder="Email Address"
+            required
+          />
+          <button class="button disabled" type="button">Submit</button>
+        </form>
+      </div>
+    </section>
   </main>
+  <!-- footer -->
+<footer>
+  <div class="footer container">
+    <div class="footer-link">
+      <ul class="footer-ul">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p>©Your Website 2023. All Rights Reserved.</p>
+    </div>
+    <div class="footer-icons">
+      
+        <i class="fa-brands fa-facebook icon" ></i>
+        <i class="fa-brands fa-twitter icon"></i>  
+        <i class="fa-brands fa-instagram icon"></i>
+      
+    </div>
+  </div>
+</footer>
+</body>
 </html>

@@ -48,3 +48,6 @@ a {
 input {
   border-width: 0;
 }
+li {
+  list-style-type: none;
+}
